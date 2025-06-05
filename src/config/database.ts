@@ -23,4 +23,5 @@ dataBase
   .catch((err: Error) => {
     console.error("Erro ao conectar com o Banco de Dados:", err);
   });
+  
 export default dataBase;

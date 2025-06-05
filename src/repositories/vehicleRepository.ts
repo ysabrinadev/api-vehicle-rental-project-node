@@ -3,7 +3,7 @@ import { IVehicle } from "../interfaces/IVehicle";
 import { BaseRepository } from "./baseRepository";
 
 export class VehicleRepository extends BaseRepository<IVehicle & RowDataPacket> {
-    constructor() {
+  constructor() {
     super("vehicles");
   }
 

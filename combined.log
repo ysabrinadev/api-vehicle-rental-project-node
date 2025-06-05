@@ -1,0 +1,14 @@
+{"level":"info","message":"::1 - GET /api/vehicles 304 - - 3.525 ms","timestamp":"2025-06-05T21:36:00.346Z"}
+{"level":"info","message":"::1 - POST /api/vehicles 201 177 - 22.720 ms","timestamp":"2025-06-05T21:36:37.389Z"}
+{"level":"info","message":"::1 - GET /api-docs/ 304 - - 11.113 ms","timestamp":"2025-06-05T21:37:27.966Z"}
+{"level":"info","message":"::1 - GET /api-docs/swagger-ui.css 304 - - 3.723 ms","timestamp":"2025-06-05T21:37:27.992Z"}
+{"level":"info","message":"::1 - GET /api-docs/swagger-ui-bundle.js 304 - - 0.959 ms","timestamp":"2025-06-05T21:37:27.996Z"}
+{"level":"info","message":"::1 - GET /api-docs/swagger-ui-init.js 200 7558 - 0.581 ms","timestamp":"2025-06-05T21:37:28.001Z"}
+{"level":"info","message":"::1 - GET /api-docs/swagger-ui-standalone-preset.js 304 - - 9.864 ms","timestamp":"2025-06-05T21:37:28.009Z"}
+{"level":"info","message":"::1 - GET /api-docs/favicon-32x32.png 304 - - 0.577 ms","timestamp":"2025-06-05T21:37:28.278Z"}
+{"level":"info","message":"::1 - GET /api/vehicles 200 179 - 15.826 ms","timestamp":"2025-06-05T21:37:42.415Z"}
+{"level":"info","message":"::1 - GET /api/vehicles 304 - - 3.369 ms","timestamp":"2025-06-05T21:37:43.707Z"}
+{"level":"info","message":"::1 - GET /api/vehicles/1 200 177 - 4.308 ms","timestamp":"2025-06-05T21:37:54.246Z"}
+{"level":"info","message":"::1 - PUT /api/vehicles/1 200 177 - 20.165 ms","timestamp":"2025-06-05T21:38:25.000Z"}
+{"level":"info","message":"::1 - GET /api/vehicles 200 179 - 1.416 ms","timestamp":"2025-06-05T21:38:31.461Z"}
+{"level":"info","message":"::1 - DELETE /api/vehicles/1 204 - - 9.967 ms","timestamp":"2025-06-05T21:38:40.060Z"}

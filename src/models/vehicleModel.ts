@@ -1,7 +1,7 @@
 import { IVehicle } from "../interfaces/IVehicle";
 
 import { RowDataPacket } from "mysql2/promise";
-import { VehicleRepository } from "../repositories/VehicleRepository";
+import { VehicleRepository } from "../repositories/vehicleRepository";
 
 export class VehicleModel {
   private repository: VehicleRepository;

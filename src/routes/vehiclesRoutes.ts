@@ -9,7 +9,7 @@ const vehicleController = new VehicleController();
  * /api/vehicles:
  *   get:
  *     summary: Retorna todos os veículos.
- *     tags: [Veículos]
+ *     tags: [Vehicles]
  *     responses:
  *       200:
  *         description: Lista de veículos.
@@ -27,7 +27,7 @@ router.get("/", vehicleController.getAllVehicles.bind(vehicleController));
  * /api/vehicles/{id}:
  *   get:
  *     summary: Retorna um veículo específico.
- *     tags: [Veículos]
+ *     tags: [Vehicles]
  *     parameters:
  *       - in: path
  *         name: id
@@ -52,7 +52,7 @@ router.get("/:id", vehicleController.getVehicleById.bind(vehicleController));
  * /api/vehicles:
  *   post:
  *     summary: Cria um novo veículo.
- *     tags: [Veículos]
+ *     tags: [Vehicles]
  *     requestBody:
  *       required: true
  *       content:
@@ -61,7 +61,7 @@ router.get("/:id", vehicleController.getVehicleById.bind(vehicleController));
  *             $ref: '#/components/schemas/Vehicle'
  *     responses:
  *       201:
- *         description: Veículo criado com sucesso!
+ *         description: Veículo cadastrado com sucesso!
  *         content:
  *           application/json:
  *             schema:
@@ -76,7 +76,7 @@ router.post("/", vehicleController.createVehicle.bind(vehicleController));
  * /api/vehicles/{id}:
  *   put:
  *     summary: Atualiza um veículo existente.
- *     tags: [Veículos]
+ *     tags: [Vehicles]
  *     parameters:
  *       - in: path
  *         name: id
@@ -107,7 +107,7 @@ router.put("/:id", vehicleController.updateVehicle.bind(vehicleController));
  * /api/vehicles/{id}:
  *   delete:
  *     summary: Remove um veículo.
- *     tags: [Veículos]
+ *     tags: [Vehicles]
  *     parameters:
  *       - in: path
  *         name: id
