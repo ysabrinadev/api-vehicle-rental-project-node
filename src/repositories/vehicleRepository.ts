@@ -4,11 +4,11 @@ import { BaseRepository } from "./baseRepository";
 
 export class VehicleRepository extends BaseRepository<IVehicle & RowDataPacket> {
     constructor() {
-    super("veiculos");
+    super("vehicles");
   }
 
   async findByPlate(placa: string): Promise<IVehicle | null> {
-    const query = "SELECT * FROM veiculos WHERE placa = ?";
+    const query = "SELECT * FROM vehicles WHERE placa = ?";
     const results = await this.executeQuery<(IVehicle & RowDataPacket)[]>(
       query,
       [placa]
@@ -20,7 +20,7 @@ export class VehicleRepository extends BaseRepository<IVehicle & RowDataPacket> 
     id: number,
     disponivel: boolean
   ): Promise<IVehicle | null> {
-    const query = "UPDATE veiculos SET disponivel = ? WHERE id = ?";
+    const query = "UPDATE vehicles SET disponivel = ? WHERE id = ?";
     await this.executeQuery(query, [disponivel, id]);
     return this.findById(id);
   }
