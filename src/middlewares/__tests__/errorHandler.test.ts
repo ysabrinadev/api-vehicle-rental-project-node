@@ -1,6 +1,11 @@
 import { Request, Response } from "express";
 import { AppError, errorHandler } from "../errorHandler";
 
+jest.mock("../logger", () => ({
+    error: jest.fn(),
+    info: jest.fn(),
+}));
+
 describe("Middleware de Tratamento de Erros", () => {
     let mockRequest: Partial<Request>;
     let mockResponse: Partial<Response>;
