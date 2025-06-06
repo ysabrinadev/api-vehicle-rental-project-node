@@ -8,7 +8,7 @@ export class VehicleRepository extends BaseRepository<IVehicle & RowDataPacket> 
   }
 
   async findByPlate(placa: string): Promise<IVehicle | null> {
-    const query = "SELECT * FROM vehicles WHERE placa = ?";
+    const query = "SELECT * FROM vehicles WHERE Placa = ?";
     const results = await this.executeQuery<(IVehicle & RowDataPacket)[]>(
       query,
       [placa]
